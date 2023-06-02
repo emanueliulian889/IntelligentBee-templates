@@ -1,0 +1,327 @@
+.available-jobs {
+    .job-sidebar {
+        @include md {
+            display: none;
+        }
+        .sidebar__inner {
+            background-color: #fff;
+            border: 1px solid #dddddd;
+            padding: 25px 0;
+            box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.10);
+            border-radius: 5px;
+            @include lg {
+                padding: 20px 0 15px 0;
+            }
+            li {
+                list-style: none;
+                border-bottom: 1px solid #D7D7D7;
+                margin-bottom: 15px;
+                padding: 0 35px 15px;
+                @include lg {
+                    padding: 0 20px 10px;
+                    margin-bottom: 10px;
+                }
+                a {
+                    font-size: 1.6rem;
+                    transition: all 0.4s;
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+                &.apply-btn {
+                    border-bottom: 0;
+                    padding: 0 35px; 
+                    margin-bottom: 0;
+                    margin-top: 25px;
+                    @include lg {
+                        margin-top: 20px;
+                        margin-bottom: 5px;
+                        padding: 0 15px;
+                    }
+                    .yellow-ghost-btn {
+                        @include lg {
+                            padding: 5px 0;
+                        }
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .description-section {
+        margin-bottom: 80px;
+        padding-left: 50px;
+        @include lg {
+            padding-left: 0;
+        }
+        @include sm {
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 2.8rem;
+            line-height: 1.5;
+            border-bottom: 1px solid #E3E3E3;
+            margin-bottom: 30px;
+            font-weight: 400;
+            padding-bottom: 10px;
+            @include sm {
+                font-size: 2.4rem;
+                margin-bottom: 20px;
+                padding-bottom: 5px;
+            }
+        }
+        h3 {
+            font-size: 1.8rem;
+            line-height: 1;
+            font-weight: 400;
+            @include sm {
+                font-size: 1.7rem;
+                margin-bottom: 15px;
+                padding-bottom: 5px;
+            }
+        }
+        ul {
+            li {
+                list-style: none;
+                position: relative;
+                padding-left: 23px;
+                margin-bottom: 17px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                    background-image: url(../../images/checkmark-icon.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 13px;
+                    height: 12px;
+                }
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .col-md-9 {
+        padding-left: 50px;
+    }
+}
+
+.form-apply-job {
+    margin-bottom: 150px;
+    @include md {
+        margin-bottom: 100px;
+    }
+    @include sm {
+        margin-bottom: 75px;
+    }
+    @include cover;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 9;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+        z-index: 10;
+    }
+    .apply-job-form {
+        margin-bottom: 100px;
+        @include sm {
+            margin-bottom: 50px;
+        }
+        .fast-form-wrapper {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            z-index: 98;
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            border: 1px solid #CCD3DE!important;
+            color: $body-color;
+        }
+
+        textarea {
+            margin-bottom: 20px!important;
+        }
+        .attach-file {
+            background-color: #fdfdfd;
+            border: 1px dashed #CCD3DE;
+            padding: 20px;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            label {
+                @include sm {
+                    width: 100%;
+                }
+            }
+        }
+        #apply_attachFile {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+        #apply_attachFile + label {
+            display: inline-block;
+            margin: 0;
+        }
+        
+        #apply_attachFile:focus + label,
+        #apply_attachFile + label:hover {
+            
+        }
+        #apply_attachFile + label {
+            cursor: pointer;
+            border: 1px solid #CCD3DE;
+            background-color: #fff;
+            padding: 10px 20px 10px 15px;
+            border-radius: 20px;
+            span {
+                margin: 0;
+                font-size: 1.6rem;
+                font-family: $body-font;
+                position: relative;
+                padding-left: 25px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-image: url(../../images/paperclip-icon.png);
+                    background-size: 16px 18px;
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    width: 16px;
+                    height: 18px;
+                }
+            }
+        }
+        #apply_attachFile:focus + label {
+            outline: 1px dotted #000;
+            outline: -webkit-focus-ring-color auto 5px;
+        }
+        .yellow-btn {
+            width: 100%;
+            border: 0;
+            cursor: pointer;
+        }
+        .checkbox-field {
+            a {
+                text-decoration: underline;
+                transition: all 0.4s;
+                &:hover{
+                    color: $yellow;
+                }
+                @include sm {
+                    display: block;
+                }
+            }
+            input[type="checkbox"] {
+                opacity: 0;
+                position: absolute;
+                left: -99999999px;
+            }
+            input[type="checkbox"] + label::after {
+                content: none;
+            }
+            input[type="checkbox"]:checked + label::after {
+                content: "";
+            }
+            label {
+                position: relative;
+                display: inline-block;
+                padding-left: 25px;
+                margin: 0 0 10px;
+                // font-size: 1.4rem;
+                // a {
+                //     font-size: inherit;
+                // }
+                @include sm {
+                    margin: 0 0 10px;
+                }
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                }
+                &::before {
+                    height: 17px;
+                    width: 17px;
+                    border: 1px solid #707070;
+                    left: 0px;
+                    top: 3px;
+                    border-radius: 2px;
+                }
+                &::after {
+                    height: 6px;
+                    width: 10px;
+                    border-left: 3px solid;
+                    border-bottom: 3px solid;
+                    transform: rotate(-45deg);
+                    left: 3px;
+                    top: 7px;
+                    border-color: $yellow;
+                }
+            }
+        }
+    }
+}
+
+.divider {
+    width: 100%;
+    &.xs {
+        height: 15px;
+        @include sm {
+            height: 10px;
+        }
+    }
+    &.sm {
+        height: 30px;
+        @include sm {
+            height: 20px;
+        }
+    }
+    &.md {
+        height: 60px;
+        @include md {
+            height: 50px;
+        }
+        @include sm {
+            height: 40px;
+        }
+    }
+    &.lg {
+        height: 120px;
+        @include md {
+            height: 80px;
+        }
+        @include sm {
+            height: 60px;
+        }
+    }
+}

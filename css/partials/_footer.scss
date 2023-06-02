@@ -1,0 +1,184 @@
+footer {
+    padding: 55px 0 40px;
+    background-color: $dark;
+    @include sm {
+        padding: 35px 0 20px;
+    }
+    .container {
+        .row {
+            .col-md-6 {
+                &.align-right {
+                    display: flex;
+                    justify-content: flex-end;
+                    @include sm {
+                        display: block;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-logo {
+        display: inline-block;
+        img {
+            height: 90px;
+        }
+        @include sm {
+            margin: 0 0 20px;
+        }
+    }
+    p {
+        color: $footer-gray;
+        margin: 0;
+    }
+    .footer-description {
+        max-width: 480px;
+        margin-bottom: 30px;
+        @include sm {
+            margin-bottom: 20px;
+        }
+    }
+    .clutch-widget {
+        margin-bottom: 30px;
+        @include sm {
+            margin-bottom: 20px;
+        }
+    }
+    .links-widget {
+        margin-top: 60px;
+        @include md {
+            margin-top: 35px;
+        }
+        h5 {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            @include sm {
+                margin-bottom: 10px;
+            }
+        }
+        ul {
+            li {
+                list-style: none;
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    color: $footer-gray;
+                    transition: all 0.4s;
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+        &.services {
+            margin-right: 15px;
+            @include md {
+                margin-right: 0;
+            }
+        }
+        &.careers {
+            margin-left: 50px;
+            @include md {
+                margin-left: 0;
+            }
+        }
+    }
+    .copyright-wrapper {
+        border-top: 1px solid #444953;
+        padding-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        @include md {
+            padding-top: 20px;
+            margin-top: 20px;
+            flex-direction: column;
+        }
+        @include sm {
+            margin-top: 30px;
+        }
+        .site-copyright,
+        #getYear {
+            color: $footer-gray;
+            font-size: 1.4rem;
+        }
+        .policy-links {
+            @include md {
+                margin-top: 5px;
+            }
+            li {
+                display: inline-block;
+                margin-right: 40px;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    right: -23px;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 3px;
+                    background-color: $footer-gray;
+                    top: 50%;
+                    margin-top: -3px;
+                }
+                &:last-child {
+                    margin-right: 0;
+                    &::before {
+                        display: none;
+                    }
+                }
+                a {
+                    color: $footer-gray;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+.social-footer {
+    li {
+        display: inline-block;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+        .hexagon {
+            position: relative;
+            width: 35px; 
+            height: 20.21px;
+            background-color: $yellow;
+            margin: 10.10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            transition: all 0.4s;
+            &:hover {
+                opacity: 0.85;
+            }
+        }
+        .hexagon:before,
+        .hexagon:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 17.5px solid transparent;
+            border-right: 17.5px solid transparent;
+        }
+        
+        .hexagon:before {
+            bottom: 100%;
+            border-bottom: 10.10px solid $yellow;
+        }
+        
+        .hexagon:after {
+            top: 100%;
+            width: 0;
+            border-top: 10.10px solid $yellow;
+        }
+    }
+}

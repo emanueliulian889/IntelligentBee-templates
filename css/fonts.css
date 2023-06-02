@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'AvertaIB';
+    src: url('../fonts/AvertaStd-RegularItalic.woff2') format('woff2'),
+        url('../fonts/AvertaStd-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvertaIB';
+    src: url('../fonts/AvertaStd-Regular.woff2') format('woff2'),
+        url('../fonts/AvertaStd-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvertaIB';
+    src: url('../fonts/AvertaStd-Light.woff2') format('woff2'),
+        url('../fonts/AvertaStd-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvertaIB';
+    src: url('../fonts/AvertaStd-Bold.woff2') format('woff2'),
+        url('../fonts/AvertaStd-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvertaIB';
+    src: url('../fonts/AvertaStd-BoldItalic.woff2') format('woff2'),
+        url('../fonts/AvertaStd-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvertaIB';
+    src: url('../fonts/AvertaStd-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/AvertaStd-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvertaIB';
+    src: url('../fonts/AvertaStd-LightItalic.woff2') format('woff2'),
+        url('../fonts/AvertaStd-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvertaIB';
+    src: url('../fonts/AvertaStd-Semibold.woff2') format('woff2'),
+        url('../fonts/AvertaStd-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

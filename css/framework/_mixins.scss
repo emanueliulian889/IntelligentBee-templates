@@ -1,0 +1,70 @@
+@mixin input-placeholder {
+    &.placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// responsive mixins
+@mixin lg {
+    @media (max-width: #{$lg-width}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: #{$md-width}) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: #{$sm-width}) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media (max-width: #{$xs-width}) {
+        @content;
+    }
+}
+
+@mixin space($value) {
+    margin: $value + px;
+}
+
+.vertical-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
