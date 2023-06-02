@@ -1,0 +1,72 @@
+.cta-white-section {
+    padding: 128px 0;
+    background: #fff;
+    @include md {
+        padding: 64px 0;
+    }
+    .description {
+        max-width: 756px;
+        text-align: center;
+        margin: 0 auto;
+        @include md {
+            max-width: 100%;
+        }
+    }
+}
+
+.text-box {
+    background-color: $secondary-surface;
+    padding: 64px 0;
+    @include lg {
+        padding: 32px 0;
+    }
+
+    .accent-block {
+        padding: 64px;
+        border-radius: 8px;
+        height: 100%;
+        position: relative;
+        @include lg {
+            padding: 32px;
+            margin-bottom: 32px;
+        }
+        @include md {
+            height: auto;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url('/images/white-ornament.svg');
+            width: 272px;
+            height: 272px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .accent-block.dark {
+        background-color: $body-color;
+        position: relative;
+        h2, p {
+            color: #fff;
+        }
+        p {
+            margin-bottom: 32px;
+        }
+    }
+
+    .accent-block.accent {
+        background: linear-gradient(270deg, rgba(255, 171, 0, 0.73) 0%, #EE9500 100%);
+    }
+
+    .description-block {
+        background-color: #fff;
+        border: 1px solid $border;
+        border-radius: 8px;
+        padding: 64px;
+        @include lg {
+            padding: 32px;
+        }
+    }
+}

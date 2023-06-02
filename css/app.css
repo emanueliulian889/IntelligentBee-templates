@@ -8897,6 +8897,22 @@ template {
   color: #fff;
 }
 
+.black-btn {
+  background-color: #1D1D1D;
+  color: #fff;
+  text-align: center;
+  min-height: 40px;
+  padding: 10px 24px;
+  display: inline-block;
+  margin: 0;
+  border-radius: 40px;
+  transition: all 0.4s;
+}
+.black-btn:hover {
+  background-color: #373737;
+  color: #fff;
+}
+
 input[type=text],
 input[type=email] {
   width: 100%;
@@ -8967,7 +8983,6 @@ h2 {
 @media (max-width: 768px) {
   h2 {
     font-size: 3.4rem;
-    margin-bottom: 30px;
     line-height: 42px;
   }
 }
@@ -8981,7 +8996,6 @@ h3 {
 @media (max-width: 768px) {
   h3 {
     font-size: 2.8rem;
-    margin-bottom: 16px;
     line-height: 35px;
   }
 }
@@ -8995,7 +9009,6 @@ h4 {
 @media (max-width: 768px) {
   h4 {
     font-size: 2.6rem;
-    margin-bottom: 16px;
     line-height: 32px;
   }
 }
@@ -9009,7 +9022,6 @@ h5 {
 @media (max-width: 768px) {
   h5 {
     font-size: 2.4rem;
-    margin-bottom: 16px;
     line-height: 30px;
   }
 }
@@ -10554,4 +10566,85 @@ footer .copyright-wrapper .policy-links li a {
   background-image: url("/images//ornament-02.svg");
   background-repeat: no-repeat;
   z-index: 1;
+}
+
+.cta-white-section {
+  padding: 128px 0;
+  background: #fff;
+}
+@media (max-width: 991px) {
+  .cta-white-section {
+    padding: 64px 0;
+  }
+}
+.cta-white-section .description {
+  max-width: 756px;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .cta-white-section .description {
+    max-width: 100%;
+  }
+}
+
+.text-box {
+  background-color: #F5F5F5;
+  padding: 64px 0;
+}
+@media (max-width: 1200px) {
+  .text-box {
+    padding: 32px 0;
+  }
+}
+.text-box .accent-block {
+  padding: 64px;
+  border-radius: 8px;
+  height: 100%;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .text-box .accent-block {
+    padding: 32px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 991px) {
+  .text-box .accent-block {
+    height: auto;
+  }
+}
+.text-box .accent-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/images/white-ornament.svg");
+  width: 272px;
+  height: 272px;
+  background-repeat: no-repeat;
+}
+.text-box .accent-block.dark {
+  background-color: #1D1D1D;
+  position: relative;
+}
+.text-box .accent-block.dark h2, .text-box .accent-block.dark p {
+  color: #fff;
+}
+.text-box .accent-block.dark p {
+  margin-bottom: 32px;
+}
+.text-box .accent-block.accent {
+  background: linear-gradient(270deg, rgba(255, 171, 0, 0.73) 0%, #EE9500 100%);
+}
+.text-box .description-block {
+  background-color: #fff;
+  border: 1px solid #E9E9E9;
+  border-radius: 8px;
+  padding: 64px;
+}
+@media (max-width: 1200px) {
+  .text-box .description-block {
+    padding: 32px;
+  }
 }/*# sourceMappingURL=app.css.map */
